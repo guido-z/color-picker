@@ -1,26 +1,35 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
+import Sidebar from './components/sidebar/Sidebar';
+import ColorArea from './components/color-area/ColorArea';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+
+  constructor() {
+    super();
+
+    this.state = {
+      selectedColor: 'black'
+    };
+
+    this.handleColorSelection = this.handleColorSelection.bind(this);
+  }
+
+  render() {
+    return (
+      <div className="App">
+        <Sidebar colorSelection={this.handleColorSelection} />
+        <ColorArea background={this.state.selectedColor}/>
+      </div>
+    );
+  }
+
+  handleColorSelection(color) {
+    this.setState({
+      selectedColor: color
+    });
+  }
+
 }
 
 export default App;
