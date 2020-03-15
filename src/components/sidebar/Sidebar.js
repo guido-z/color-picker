@@ -32,7 +32,7 @@ export default class Sidebar extends Component {
         return (
             <div className="sidebar">
                 <h2 className="sidebar-title">Color picker</h2>
-                {accordions}
+                <div className="accordions">{accordions}</div>                
             </div>
         );
     }

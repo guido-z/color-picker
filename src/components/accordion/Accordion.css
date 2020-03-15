@@ -18,7 +18,7 @@
     position: absolute;
     top: -100;
     visibility: hidden;
-}
+}   
 
 #toggle-list:checked + .accordion-items {
     height: 0;
