@@ -9,7 +9,7 @@ class App extends Component {
     super();
 
     this.state = {
-      selectedColor: 'black'
+      selectedColor: '#ffffff'
     };
 
     this.handleColorSelection = this.handleColorSelection.bind(this);
