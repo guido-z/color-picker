@@ -37,6 +37,7 @@
 
 .accordion-items li {
     border-bottom: 1px solid #eee;
+    cursor: pointer;
     padding: 3px 0 3px 15px;
 }
 
