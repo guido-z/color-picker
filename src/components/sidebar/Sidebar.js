@@ -18,7 +18,11 @@ export default class Sidebar extends Component {
             },
             {
                 title: '🔴Common',
-                items: ['#ff0000', '#00ff00', '#0000ff']
+                items: ['#ff0000', '#00ff00', '#0000ff', '#ffffff']
+            },
+            {
+                title: '🤪Overflow',
+                items: ['#ff0000', '#00ff00', '#0000ff', '#ffffff','#ff0000', '#00ff00', '#0000ff', '#ffffff', '#ff0000', '#00ff00', '#0000ff', '#ffffff','#ff0000', '#00ff00', '#0000ff', '#ffffff']
             }
         ];
     }
